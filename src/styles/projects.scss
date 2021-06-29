@@ -1,0 +1,61 @@
+.button
+{
+  width:150px;
+  height:150px;
+  margin:40px;
+  border-radius:0%;
+  background-image:  rgb(32, 32, 32);
+}
+.pictures
+{
+  width:150px;
+  border-radius:0px;;
+  
+}
+
+.myProjects
+{
+  background: rgb(32, 32, 32);
+ 
+}
+.myProjects h1
+{
+  font-size: 40px;
+ 
+}
+.myProjects p
+{
+  font-family:'Poppins';
+  margin:10px;
+ 
+}
+.subtitle p
+{
+  font-size:12px;
+  text-shadow: 0.3px 0.3px 1px #db3bab;
+}
+.buttonProjects img:hover
+{
+  box-shadow: 3px 5px 6px black;
+border-style: solid;
+border-color: rgb(165, 6, 125);
+border-radius:10%;
+}
+
+.buttonProjects img:active
+{
+
+
+  box-shadow: 3px 5px 6px black;
+  border-style: inset;
+  border-color: rgb(255, 255, 255);
+  border-radius:10%;
+ 
+  
+}
+.buttonProjects
+{
+  display:inline block;
+  justify-content:center;
+  padding:20px;
+}

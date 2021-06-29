@@ -3,7 +3,7 @@
 import { MenuBar } from '../components/MenuBar';
 import {About} from '../components/About'
 import {MyFooter} from '../components/MyFooter'
-
+import {Projects} from '../components/Projects'
 export function Homepage()
 {
   
@@ -12,7 +12,7 @@ export function Homepage()
         <div>
            <MenuBar/>
            <About/>
-        
+           <Projects/>
       
          <MyFooter/>
         </div>

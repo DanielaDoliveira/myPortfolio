@@ -2,15 +2,21 @@ footer{
   background:#1d1c1c;
   
 }
-.myFooterArea p
+.paragraph p
 {
   font-family:"Poppins";
   font-size : 12px;
+  margin: 10px;
+  display:flex;
+  
  
+  justify-content:center;
+  align-items:center;
+
 }
 .myFooterArea
 {
-  padding:15px;
+  padding:90px;
   display:flex;
   justify-content:center;
   align-items: center;
