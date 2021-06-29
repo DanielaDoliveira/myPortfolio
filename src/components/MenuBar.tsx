@@ -1,7 +1,7 @@
 
 import '../styles/menu.scss'
 import React, {useState} from 'react';
-
+import {Switch,Router,Link} from 'react-router-dom';
 export function MenuBar() {
 
   const [click,setClick] = useState(true);
