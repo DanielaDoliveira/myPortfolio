@@ -14,8 +14,8 @@ export function Homepage()
            <MenuBar/>
            <About/>
            <Projects/>
-       
-         <MyFooter/>
+           <MyFooter/>
+      
         </div>
     );
 }

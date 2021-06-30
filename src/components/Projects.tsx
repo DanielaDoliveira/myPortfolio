@@ -2,7 +2,8 @@
 
 import '../styles/projects.scss'
 import unity from "../assets/.env.photos/unitylogo.jpg"
-import reactnative from "../assets/.env.photos/reactnativeicon.png"
+import reactnative from "../assets/.env.photos/reactNativeIcon.svg"
+import react from "../assets/.env.photos/reactJs.svg"
 
 import '../styles/projects.scss';
 
@@ -20,16 +21,22 @@ export function Projects()
   return(
         <div className = "myProjects">
           <h1 className = "datasheet">Projetos</h1>   
-          <p>Escolha uma tecnologia</p>
+          <p> Que tipo de projeto deseja visualizar?<br/> Selecione uma tecnologia:</p>
           
           
           <div className = "buttonProjects">
-              <img className = "pictures"src = {unity} onClick = {handleClickUnityProjects}/>
-               <span className = "subtitle"><p>Unity Engine</p></span>
-          </div>
-          <div className = "buttonProjects">
-              <img className = "pictures"src = {reactnative} onClick = {handleClickReactNativeProjects}/>
-            <span className = "subtitle"><p>React Native</p></span>
+            <ul className = "ultechnologyButtons">
+              <li>
+                <img className = "pictures"src = {unity} onClick = {handleClickUnityProjects}/>
+                <span className = "subtitle"><p>Unity Engine</p></span>
+              </li>
+              <li>
+                <img className = "pictures"src = {reactnative} onClick = {handleClickReactNativeProjects}/>
+                <span className = "subtitle"><p><br/>React Native</p></span>
+              </li>
+          
+            </ul>
+             
           </div>
          
 

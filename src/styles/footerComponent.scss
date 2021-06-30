@@ -2,22 +2,97 @@ footer{
   background:#1d1c1c;
   
 }
-.paragraph p
+#linkMark
 {
+  width:32px;
+  height:32px;
+  border-radius: 5px;
+}
+.contactBadges 
+{
+ 
+  display:flex;
+  margin:15px auto;
+  justify-content:center;
+
+ 
+}
+
+.badgesInFooter
+{
+ display:flex;
+ margin:5px;
+ 
+
+ 
+
+}
+.paragraph
+{
+
+  display:flex;
+  justify-content:flex-start;
+  text-align:justify;
+  padding:20px;
+}
+.paragraph h6
+{
+
+  
+  justify-content:flex-start;
   font-family:"Poppins";
   font-size : 12px;
   margin: 10px;
-  display:flex;
   
- 
-  justify-content:center;
-  align-items:center;
-
 }
+
 .myFooterArea
 {
-  padding:90px;
+  padding:30px;
   display:flex;
   justify-content:center;
   align-items: center;
+ 
+  
+}
+@media (max-width: 600px){
+  .paragraph
+  {
+  
+    display:inline-flexbox;
+    justify-content:flex-start;
+    text-align:left;
+    
+  }
+  .paragraph h6
+  {
+  
+    
+    justify-content:center;
+    font-family:"Poppins";
+    font-size : 12px;
+   
+    font-size: 10px;
+    
+  }
+  .contactBadges 
+{
+ 
+  display:inline-flexbox;
+   justify-content:center;
+  align-items:flex-end;
+
+ 
+}
+
+.badgesInFooter
+{
+ display:inline;
+ 
+ 
+
+ 
+
+}
+
 }

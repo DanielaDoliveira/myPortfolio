@@ -1,15 +1,25 @@
 .button
 {
-  width:150px;
-  height:150px;
-  margin:40px;
-  border-radius:0%;
-  background-image:  rgb(32, 32, 32);
+  width:80px;
+  height:90px;
+  margin:10px;
+ 
+  border-radius:30%;
+  font-size: 60px;
+  color:#ffffff;
+  box-shadow: 3px 5px 6px rgb(0, 0, 0);
+  text-shadow: 1px 3px 1px rgb(156, 153, 153);
+  background-color:#000000;
+  display:flex;
+  justify-content:flex-start;
+  text-align: center;
 }
+
 .pictures
 {
   width:150px;
-  border-radius:0px;;
+ 
+  padding:10px;
   
 }
 
@@ -53,15 +63,35 @@ border-radius:10%;
  
   
 }
-.buttonProjects
+
+
+
+.ultechnologyButtons
 {
-  display:inline block;
+  display:flex;
   justify-content:center;
-  padding:20px;
+  align-items: space-between;
+ 
 }
-.button
-{
-  border-radius:100px;
-  dislay:flex;
+
+
+
+@media (max-width: 600px){
+  .button
+  {
+    width:50px;
+    height:50px;
+    margin:10px;
+   
+    border-radius:30%;
+    font-size: 30px;
+    color:#ffffff;
+    box-shadow: 1px 3px 6px rgb(0, 0, 0);
+    text-shadow: 1px 3px 1px rgb(156, 153, 153);
+    background-color:#000000;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+  }
 
 }
