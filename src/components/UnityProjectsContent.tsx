@@ -5,10 +5,17 @@ import ninja from "../assets/.env.photos/ninja.png"
 import ninjat from "../assets/.env.photos/ninjat.png"
 import {Button} from "./Button"
 import "../styles/uProjects.scss"
+import { useHistory } from "react-router-dom"
 
 export function UnityProjectsContent ()
 {
+
   const buttonBack  = "🢀"
+  const history = useHistory();
+  function handleBackButton ()
+  {
+    history.push("/");
+  } 
   return (
     <div className = "secondDivUnityProjects">
            
@@ -48,7 +55,7 @@ export function UnityProjectsContent ()
         </li>
       </ul>
  
-   <Button
+   <Button onClick = {handleBackButton}
   >
      {buttonBack} 
    </Button>

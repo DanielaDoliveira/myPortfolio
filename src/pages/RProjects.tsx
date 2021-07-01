@@ -4,10 +4,15 @@ import { MyFooter } from '../components/MyFooter'
 import '../styles/rProjects.scss'
 import plantmanager from "../assets/.env.photos/plantmanager.png"
 import { Button } from '../components/Button'
-
+import {useHistory} from 'react-router-dom'
 export function Rprojects()
 {
   const buttonBack  = "🢀";
+  const history = useHistory();
+  function handleButtonBack()
+  {
+    history.push("/")
+  }
   return(
 
     <div className="RNProjects">
@@ -25,7 +30,7 @@ export function Rprojects()
           
     </ul>
         </div>
-        <Button>
+        <Button onClick = {handleButtonBack}>
         {buttonBack}
       </Button>
         <MyFooter/>
