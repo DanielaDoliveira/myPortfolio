@@ -8,13 +8,14 @@ import cssthreeLogo from "../assets/.env.photos/cssthree.svg"
 import javascriptLogo from "../assets/.env.photos/javascript.svg"
 import kotlinLogo from "../assets/.env.photos/kotlin.svg"
 import '../styles/about.scss'
+
 import gmail from "../assets/.env.photos/gmail.svg"
 import telegram from "../assets/.env.photos/telegram.svg"
 import github from "../assets/.env.photos/github.svg"
 import linkedin from "../assets/.env.photos/linkedin.svg"
 export function About(){
   return(
-    <div className = "aboutMe">
+    <div className = "aboutMe" id = "aboutMe">
               
     <div className = "careerOne">
             <p>Unity Developer &amp;<br/>
@@ -29,7 +30,7 @@ export function About(){
           <img src = {profilePhoto} className = "myPhoto"alt = "Foto de perfil de Daniela"/>
          
 
-          <h1 className = "datasheet"> Ficha Técnica</h1>
+          <h1 className = "datasheet" id = "datasheet"> Ficha Técnica</h1>
           <span className = "lineTitle"></span>
           <h2 className = "titles">Formação:</h2>
           <p>Ciência da Computação</p>
@@ -57,7 +58,7 @@ export function About(){
          <p><b>Inglês: </b> Nível intermediário</p>
          <p><b>Espanhol: </b> Nível básico</p>
          <span className = "lineTitle"></span>
-         <h1 className = "datasheet"> Redes sociais e contato:</h1>
+         <h1 className = "datasheet" id = "contacts"> Redes sociais e contato:</h1>
          <div className = "badges">
              <a href = "danidaninpce3@gmail.com" >
              <img src = {gmail} alt = "danidaninpce3@gmail.com"/>

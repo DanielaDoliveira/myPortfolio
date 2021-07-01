@@ -6,6 +6,10 @@ export function MenuBar() {
 
   const [click,setClick] = useState(true);
   const handleClick = ()=>setClick(!click);
+  function handleClickDataSheet()
+  {
+
+  }
     return(
      <nav>
        
@@ -20,9 +24,9 @@ export function MenuBar() {
   
       
             <ul className = {click?'before':'after'}>
-                    <li> <a href = "#"> Sobre mim </a></li> 
-                      <li> <a href = "#"> Projetos</a></li>
-                      <li>  <a href = "#">Contatos</a> </li>
+                    <li> <a href = "#datasheet"> Sobre mim </a></li> 
+                      <li> <a href = "#myProjects"> Projetos</a></li>
+                      <li>  <a href = "#contacts">Contatos</a> </li>
                       <li>  <a href = "#">Certificados</a> </li>
                 </ul>
   
