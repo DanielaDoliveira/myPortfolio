@@ -29,7 +29,7 @@ export function About(){
           <img src = {profilePhoto} className = "myPhoto"alt = "Foto de perfil de Daniela"/>
          
 
-          <h1 className = "datasheet"> Ficha Técnica</h1>
+          <h1 className = "datasheet" id = "aboutMe"> Ficha Técnica</h1>
           <span className = "lineTitle"></span>
           <h2 className = "titles">Formação:</h2>
           <p>Ciência da Computação</p>
@@ -57,7 +57,7 @@ export function About(){
          <p><b>Inglês: </b> Nível intermediário</p>
          <p><b>Espanhol: </b> Nível básico</p>
          <span className = "lineTitle"></span>
-         <h1 className = "datasheet"> Redes sociais e contato:</h1>
+         <h1 className = "datasheet" id = "contacts"> Redes sociais e contato:</h1>
          <div className = "badges">
              <a href = "danidaninpce3@gmail.com" >
              <img src = {gmail} alt = "danidaninpce3@gmail.com"/>

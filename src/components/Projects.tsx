@@ -9,7 +9,7 @@ import '../styles/projects.scss';
 
 export function Projects()
 {
-  
+ 
   function handleClickUnityProjects()
   {
 
@@ -19,8 +19,8 @@ export function Projects()
 
   }
   return(
-        <div className = "myProjects">
-          <h1 className = "datasheet">Projetos</h1>   
+        <div className = "myProjects"id = "projects">
+          <h1 className = "datasheet" >Projetos</h1>   
           <p> Que tipo de projeto deseja visualizar?<br/> Selecione uma tecnologia:</p>
           
           

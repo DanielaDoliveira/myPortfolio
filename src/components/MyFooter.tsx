@@ -22,17 +22,27 @@ const copyright = `(2021) Criado por Daniela Fialho.${'\n'}Todos os direitos res
       <div>
       <ul className ="contactBadges" >
        
-        <li>
-      
-        <img  className ="badgesInFooter"src = {gitmark} alt = "Foto de perfil de Daniela"/>
+      <li>
+      <a href  = "https://github.com/Danethree" >
+      <img  
+        className ="badgesInFooter"
+        src = {gitmark} 
+        alt = "Foto de perfil de Daniela"
+       />
+      </a>
+       
         </li>
 
         <li>
-        <img className = "badgesInFooter"id = "linkMark"src = {linkedinmark} alt = "Foto de perfil de Daniela"/>
+        <a href = "https://www.linkedin.com/in/daniela-fialho-d-oliveira-479b53163/">
+          <img className = "badgesInFooter"id = "linkMark"src = {linkedinmark} alt = "Foto de perfil de Daniela"/>
+        </a>
         </li>
       
         <li>
+        <a href = "https://t.me/Danethree"> 
         <img className = "badgesInFooter"id = "linkMark"src = {telegrammark} alt = "Foto de perfil de Daniela"/>
+         </a>
         </li>
        
         </ul>

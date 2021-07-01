@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.nav-item > .active {
+  border-bottom: 1px solid #333;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
