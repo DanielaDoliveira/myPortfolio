@@ -7,7 +7,7 @@ import htmlfiveLogo from "../assets/.env.photos/htmlfive.svg"
 import cssthreeLogo from "../assets/.env.photos/cssthree.svg"
 import javascriptLogo from "../assets/.env.photos/javascript.svg"
 import kotlinLogo from "../assets/.env.photos/kotlin.svg"
-import '../styles/about.css'
+import '../styles/about.scss'
 import gmail from "../assets/.env.photos/gmail.svg"
 import telegram from "../assets/.env.photos/telegram.svg"
 import github from "../assets/.env.photos/github.svg"
@@ -32,58 +32,43 @@ export function About(){
          
          
 
-          <h1 className = "datasheet" id = "aboutMe"> Ficha Técnica</h1>
+          <h1 className = "datasheet" id = "aboutMe"> About Me</h1>
           <span className = "lineTitle"></span>
-          <h2 className = "datasheet">Formação:</h2>
-          <p id = "description">Ciência da Computação</p>
-          <h2 className = "datasheet">Linguagens de Programação:</h2>
-          <div className = "badges">
-            <img id = "badges"src = {csharplogo} alt = "Linguagem de programação C#"/>
-            <img id = "badges"src = {htmlfiveLogo} alt = "Linguagem de Marcação HTML5"/>
-            <img id = "badges"src = {cssthreeLogo} alt = "Folha de estilo CSS3"/> 
-            <img id = "badges"src = {javascriptLogo} alt = "Folha de estilo CSS3"/> 
-            <img id = "badges"src = {kotlinLogo} alt = "Linguagem de programação Kotlin"/> 
+          <h2 className = "datasheet">Degree:</h2>
+          <p id = "description">Science Computer</p>
+          <h2 className = "datasheet">Programming Languages:</h2>
+         <div className = "listOfBadges">
+         <ul className = "badges">
+          <li><img id = "badges"src = {csharplogo} alt = "C# programming language "/></li>  
+           <li><img id = "badges"src = {htmlfiveLogo} alt = "Hypertext Markup Language version 5"/></li> 
+           <li><img id = "badges"src = {cssthreeLogo} alt = "Stylesheet CSS3"/> </li> 
+           <li><img id = "badges"src = {javascriptLogo} alt = "Javascript programming language"/> </li> 
+           <li><img id = "badges"src = {kotlinLogo} alt = "Kotlin programming language "/> </li> 
+         </ul>
          </div>
 
-          <h2 className = "datasheet">Bibliotecas:</h2>
-          <div className = "badges">
-            <img id = "badges"src = {reactJsLogo} alt = "Logotipo React"/>
+          <h2 className = "datasheet">Libraries:</h2>
+          <div className = "listOfBadges">
+          <ul className = "badges">
+            <li>  <img id = "badges"src = {reactJsLogo} alt = " React logo"/></li>
+            <li> <img id = "badges"src = {reactNativeLogo} alt = " React Native logo"/> </li>
+            </ul>
           
-            <img id = "badges"src = {reactNativeLogo} alt = "Logotipo React Native"/> 
+          
+           
          </div>
 
          <h2 className = "datasheet">Engines:</h2>
-         <div className = "unityBadge">
-               <img id = "unityBadge"src = {unityLogo} alt = "Logotipo unity"/>
+         <div className = "listOfBadges">
+               <img id = "badges"src = {unityLogo} alt = "Unity logo"/>
          </div>
 
-         <h2 className = "datasheet">Idiomas:</h2>
-         <p  id = "description"><b>Inglês: </b> Nível intermediário</p>
-         <p  id = "description"><b>Espanhol: </b> Nível básico</p>
-         <span className = "lineTitle"></span>
-         <h1 className = "datasheet" id = "contacts"> Redes sociais e contato:</h1>
-         <div className = "badges">
-
-             <a href = "danidaninpce3@gmail.com" >
-             <img id = "badges"src = {gmail} alt = "danidaninpce3@gmail.com"/>
-               </a> 
-
-         </div>
-         <div className = "badges">
-             <a href = "danidaninpce3@gmail.com" >
-             <img id = "badges"src = {telegram} alt = "danidaninpce3@gmail.com"/>
-               </a> 
-         </div>
-         <div className = "badges">
-             <a href = "danidaninpce3@gmail.com" >
-             <img id = "badges"src = {github} alt = "danidaninpce3@gmail.com"/>
-               </a> 
-         </div>
-         <div className = "badges">
-             <a href = "danidaninpce3@gmail.com" >
-             <img id = "badges" src = {linkedin} alt = "danidaninpce3@gmail.com"/>
-               </a> 
-         </div>
+         <h2 className = "datasheet">Languages:</h2>
+         <p  id = "description"><b>English: </b> Intermediate</p>
+         <p  id = "description"><b>Spanish: </b> Basic</p>
+        
+        
+     
          
     </section>
 

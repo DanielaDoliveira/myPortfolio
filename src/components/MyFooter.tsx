@@ -1,16 +1,13 @@
 import '../styles/footerComponent.scss'
-import gmail from "../assets/.env.photos/gmail.svg"
-import telegram from "../assets/.env.photos/telegram.svg"
-import github from "../assets/.env.photos/github.svg"
-import linkedin from "../assets/.env.photos/linkedin.svg"
-import profilePhoto from '../assets/.env.photos/daniela.png'
-import {About} from '../components/About'
+import gmail from "../assets/.env.photos/gmail.png"
+
+
 import gitmark from "../assets/.env.photos/gitmark.png"
 import linkedinmark from "../assets/.env.photos/linkedinmark.png"
 import telegrammark from "../assets/.env.photos/telegrammark.png"
 export function MyFooter()
 {
-const copyright = `(2021) Criado por Daniela Fialho.${'\n'}Todos os direitos reservados${'\n'}`;
+const copyright = `(2021) Created by Daniela Fialho.${'\n'}All Rights Reserved${'\n'}`;
   return(
     <footer className = "myFooterArea" >
       <div className = "paragraph">   
@@ -20,8 +17,9 @@ const copyright = `(2021) Criado por Daniela Fialho.${'\n'}Todos os direitos res
          
        </div>
       <div>
-      <ul className ="contactBadges" >
-       
+     
+      <ul className ="contactBadges" id = "contacts">
+   
       <li>
       <a href  = "https://github.com/Danethree" >
       <img  
@@ -35,13 +33,20 @@ const copyright = `(2021) Criado por Daniela Fialho.${'\n'}Todos os direitos res
 
         <li>
         <a href = "https://www.linkedin.com/in/daniela-fialho-d-oliveira-479b53163/">
-          <img className = "badgesInFooter"id = "linkMark"src = {linkedinmark} alt = "Foto de perfil de Daniela"/>
+          <img className = "badgesInFooter"id = "linkMark"src = {linkedinmark} alt = " Perfil de Daniela"/>
         </a>
         </li>
       
         <li>
         <a href = "https://t.me/Danethree"> 
-        <img className = "badgesInFooter"id = "linkMark"src = {telegrammark} alt = "Foto de perfil de Daniela"/>
+        <img className = "badgesInFooter"id = "linkMark"src = {telegrammark} alt = "Telegram de Daniela"/>
+         </a>
+        </li>
+
+        
+        <li>
+        <a href = "mailto:danidaninpce3@gmail.com?subject=Hello%20again"> 
+        <img className = "badgesInFooter"id = "linkMark"src = {gmail} alt = "Email de de Daniela"/>
          </a>
         </li>
        

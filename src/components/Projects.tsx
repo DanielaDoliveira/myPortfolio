@@ -6,23 +6,36 @@ import reactnative from "../assets/.env.photos/reactNativeIcon.svg"
 import react from "../assets/.env.photos/reactJs.svg"
 import {useHistory} from "react-router-dom"
 import '../styles/projects.scss';
+import { UnityProjectsContent } from './UnityProjectsContent'
+import { Rprojects } from './RProjects'
+import { useState } from 'react'
 
 export function Projects()
 {
+  const [isUnity,setIsUnity] = useState(true);
+  const [isReactNative,setIsReactNative] = useState(false);
+ 
   const history = useHistory();
   function handleClickUnityProjects()
   {
-     history.push("/projects/unityProjects");
+    setIsReactNative(false);
+    setIsUnity(true)
+
+     
+ 
   }
   function handleClickReactNativeProjects()
   {
-    history.push("/projects/reactNativeProjects");
+    setIsReactNative(true);
+    setIsUnity(false);
+   
   }
   return(
         <div className = "myProjects"id = "projects">
-          <h1 className = "datasheet" >Projetos</h1>   
-          <p  id = "description"> Que tipo de projeto deseja visualizar?<br/> Selecione uma tecnologia:</p>
-          
+          <h1 className = "datasheet" >Projects</h1>   
+          <p  id = "description"> What project type do you want to visualize?
+          <br/> Choose one technology</p>
+        
           
           <div className = "buttonProjects">
             <ul className = "ultechnologyButtons">
@@ -36,15 +49,27 @@ export function Projects()
               </li>
           
             </ul>
+            <div id = "myPortfolioProject">
              
+                 {isUnity &&(
+                   
+                      <UnityProjectsContent/>
+
+                 )}
+                 {isReactNative &&(
+                    <Rprojects/>
+
+                 )}
+               
+                
+                
           </div>
+          
          
 
           
-          
+          </div>
         </div>
-
-
 
   )
 }

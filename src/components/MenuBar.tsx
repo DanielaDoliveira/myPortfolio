@@ -26,7 +26,7 @@ export function MenuBar() {
                 offset={-70}
                 duration={500}
                  > 
-                      Sobre mim
+                      About me
             </Link>
                    </li>
                       <li>  <Link
@@ -37,7 +37,7 @@ export function MenuBar() {
                 offset={-70}
                 duration={900}
                  > 
-                     Projetos
+                     Projects
             </Link></li>
                       <li>  
                     
@@ -49,7 +49,7 @@ export function MenuBar() {
                 offset={-70}
                 duration={900}
                  > 
-                     Contatos
+                     Contacts
             </Link>
                         
                         
