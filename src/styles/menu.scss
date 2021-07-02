@@ -15,7 +15,10 @@ nav {
 	background: #1c1c1d;
 	height: 80px;
 	width: 100%;
+
+	
 }
+
 label.logo {
 	color: white;
 	font-size: 35px;
@@ -41,6 +44,7 @@ nav ul li a {
 	padding: 7px 13px;
 	border-radius: 3px;
   font-family:'Roboto';
+  cursor: pointer;
 
 }
 #threebars
@@ -51,6 +55,9 @@ a.active, a:hover {
 	background: #101011;
   color:rgb(117, 136, 12);
 	transition: .5s;
+	
+	font-size: 20px;
+  border-radius: 3px;
 
 }
 
@@ -81,6 +88,11 @@ a.active, a:hover {
 
 
 @media (max-width: 858px){
+	nav {
+	
+		position: fixed;
+	
+	}
   label.logo{
 		font-size: 25px;
 		padding-left: 0px;
@@ -96,6 +108,7 @@ a.active, a:hover {
 		left: -100%;
 		text-align: center;
 		transition: all .5s;
+	
 	}
 	nav ul li{
 		display: block;
@@ -112,7 +125,8 @@ a.active, a:hover {
 	}
 	.after {
     position: fixed;
-		width: 100%;
+		width: -30%;
+		
 		height: 100vh;
 		background: #343435;
 		top: 80px;
@@ -120,6 +134,7 @@ a.active, a:hover {
 		text-align: center;
 		transition: all .5s;
 		left: 0;
+		;
 	}
   #threebars
 {
@@ -142,6 +157,7 @@ a.active, a:hover {
  
 
 }
+
 
 }
 

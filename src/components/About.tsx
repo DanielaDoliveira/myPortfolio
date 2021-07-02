@@ -7,7 +7,7 @@ import htmlfiveLogo from "../assets/.env.photos/htmlfive.svg"
 import cssthreeLogo from "../assets/.env.photos/cssthree.svg"
 import javascriptLogo from "../assets/.env.photos/javascript.svg"
 import kotlinLogo from "../assets/.env.photos/kotlin.svg"
-import '../styles/about.scss'
+import '../styles/about.css'
 import gmail from "../assets/.env.photos/gmail.svg"
 import telegram from "../assets/.env.photos/telegram.svg"
 import github from "../assets/.env.photos/github.svg"
@@ -26,56 +26,62 @@ export function About(){
 
    
     <section className = "descriptionAboutMe">
-          <img src = {profilePhoto} className = "myPhoto"alt = "Foto de perfil de Daniela"/>
+          <div id = "myPhotoDiv">
+          <img src = {profilePhoto} className = "myPhoto" alt = "Foto de perfil de Daniela"/>
+          </div>
+         
          
 
           <h1 className = "datasheet" id = "aboutMe"> Ficha Técnica</h1>
           <span className = "lineTitle"></span>
-          <h2 className = "titles">Formação:</h2>
-          <p>Ciência da Computação</p>
-          <h2 className = "titles">Linguagens de Programação:</h2>
+          <h2 className = "datasheet">Formação:</h2>
+          <p id = "description">Ciência da Computação</p>
+          <h2 className = "datasheet">Linguagens de Programação:</h2>
           <div className = "badges">
-            <img src = {csharplogo} alt = "Linguagem de programação C#"/>
-            <img src = {htmlfiveLogo} alt = "Linguagem de Marcação HTML5"/>
-            <img src = {cssthreeLogo} alt = "Folha de estilo CSS3"/> 
-            <img src = {javascriptLogo} alt = "Folha de estilo CSS3"/> 
-            <img src = {kotlinLogo} alt = "Linguagem de programação Kotlin"/> 
+            <img id = "badges"src = {csharplogo} alt = "Linguagem de programação C#"/>
+            <img id = "badges"src = {htmlfiveLogo} alt = "Linguagem de Marcação HTML5"/>
+            <img id = "badges"src = {cssthreeLogo} alt = "Folha de estilo CSS3"/> 
+            <img id = "badges"src = {javascriptLogo} alt = "Folha de estilo CSS3"/> 
+            <img id = "badges"src = {kotlinLogo} alt = "Linguagem de programação Kotlin"/> 
          </div>
 
-          <h2 className = "titles">Bibliotecas:</h2>
+          <h2 className = "datasheet">Bibliotecas:</h2>
           <div className = "badges">
-            <img src = {reactJsLogo} alt = "Logotipo React"/>
+            <img id = "badges"src = {reactJsLogo} alt = "Logotipo React"/>
           
-            <img src = {reactNativeLogo} alt = "Logotipo React Native"/> 
+            <img id = "badges"src = {reactNativeLogo} alt = "Logotipo React Native"/> 
          </div>
 
-         <h2 className = "titles">Engines:</h2>
-         <div className = "badges">
-               <img src = {unityLogo} alt = "Logotipo unity"/>
+         <h2 className = "datasheet">Engines:</h2>
+         <div className = "unityBadge">
+               <img id = "unityBadge"src = {unityLogo} alt = "Logotipo unity"/>
          </div>
-         <h2 className = "titles">Idiomas:</h2>
-         <p><b>Inglês: </b> Nível intermediário</p>
-         <p><b>Espanhol: </b> Nível básico</p>
+
+         <h2 className = "datasheet">Idiomas:</h2>
+         <p  id = "description"><b>Inglês: </b> Nível intermediário</p>
+         <p  id = "description"><b>Espanhol: </b> Nível básico</p>
          <span className = "lineTitle"></span>
          <h1 className = "datasheet" id = "contacts"> Redes sociais e contato:</h1>
          <div className = "badges">
+
              <a href = "danidaninpce3@gmail.com" >
-             <img src = {gmail} alt = "danidaninpce3@gmail.com"/>
+             <img id = "badges"src = {gmail} alt = "danidaninpce3@gmail.com"/>
+               </a> 
+
+         </div>
+         <div className = "badges">
+             <a href = "danidaninpce3@gmail.com" >
+             <img id = "badges"src = {telegram} alt = "danidaninpce3@gmail.com"/>
                </a> 
          </div>
          <div className = "badges">
              <a href = "danidaninpce3@gmail.com" >
-             <img src = {telegram} alt = "danidaninpce3@gmail.com"/>
+             <img id = "badges"src = {github} alt = "danidaninpce3@gmail.com"/>
                </a> 
          </div>
          <div className = "badges">
              <a href = "danidaninpce3@gmail.com" >
-             <img src = {github} alt = "danidaninpce3@gmail.com"/>
-               </a> 
-         </div>
-         <div className = "badges">
-             <a href = "danidaninpce3@gmail.com" >
-             <img src = {linkedin} alt = "danidaninpce3@gmail.com"/>
+             <img id = "badges" src = {linkedin} alt = "danidaninpce3@gmail.com"/>
                </a> 
          </div>
          

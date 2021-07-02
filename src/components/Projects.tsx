@@ -21,7 +21,7 @@ export function Projects()
   return(
         <div className = "myProjects"id = "projects">
           <h1 className = "datasheet" >Projetos</h1>   
-          <p> Que tipo de projeto deseja visualizar?<br/> Selecione uma tecnologia:</p>
+          <p  id = "description"> Que tipo de projeto deseja visualizar?<br/> Selecione uma tecnologia:</p>
           
           
           <div className = "buttonProjects">
