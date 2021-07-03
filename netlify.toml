@@ -1,4 +1,4 @@
-[build]
+  [build]
 base = "."
-CI= npm run build
-publish = "./build/"
+CI = "yarn build"
+publish = "./build/*"
