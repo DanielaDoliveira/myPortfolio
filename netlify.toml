@@ -1,4 +1,0 @@
-[build]
-base = "."
-CI= "yarn build"
-publish = "./build/*"
