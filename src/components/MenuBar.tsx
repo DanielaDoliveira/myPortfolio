@@ -20,11 +20,11 @@ export function MenuBar() {
                    <li>
                    <Link
                 activeClass="active"
-                to="aboutMe"
+                to="myPhoto"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1000}
                  > 
                       About me
             </Link>
@@ -35,7 +35,7 @@ export function MenuBar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={900}
+                duration={2000}
                  > 
                      Projects
             </Link></li>
@@ -47,7 +47,7 @@ export function MenuBar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={900}
+                duration={2500}
                  > 
                      Contacts
             </Link>

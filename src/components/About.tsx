@@ -27,7 +27,7 @@ export function About(){
    
     <section className = "descriptionAboutMe">
           <div id = "myPhotoDiv">
-          <img src = {profilePhoto} className = "myPhoto" alt = "Foto de perfil de Daniela"/>
+          <img src = {profilePhoto} id = "myPhoto" className = "myPhoto" alt = "Foto de perfil de Daniela"/>
           </div>
          
          

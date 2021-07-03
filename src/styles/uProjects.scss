@@ -22,9 +22,12 @@
   border-radius:20px;
   width:200px;
   height:100px;
-  padding: 4px;
-  margin:10px auto;
+  padding: 0px;
+  margin:10px ;
   font-size:12px;
+  
+  box-shadow: 1px 0px 0px 2px black;
+
 }
 
 @media (max-width: 600px){
