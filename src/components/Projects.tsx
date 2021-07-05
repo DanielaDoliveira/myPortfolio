@@ -10,9 +10,10 @@ import { UnityProjectsContent } from './UnityProjectsContent'
 import { Rprojects } from './RProjects'
 import { useState } from 'react'
 
+
 export function Projects()
 {
-  const [isUnity,setIsUnity] = useState(true);
+  const [isUnity,setIsUnity] = useState(false);
   const [isReactNative,setIsReactNative] = useState(false);
  
   const history = useHistory();
@@ -32,20 +33,42 @@ export function Projects()
   }
   return(
         <div className = "myProjects"id = "projects">
-          <h1 className = "datasheet" >Projects</h1>   
-          <p  id = "description"> What project type do you want to visualize?
-          <br/> Choose one technology</p>
+            {!isUnity &&(
+               <div>
+                     {( !isReactNative &&
+                    <div>
+                      <h1 className = "datasheet">Projects</h1>
+                    <p  id = "description"> Which project type do you want to visualize?
+                    <br/><b>CHOOSE</b> pressing one options bellow:</p>
+                      </div>
+                    )}
+                
+ 
+                 </div>
+               )}
+          {isUnity &&(
+                   
+                  <h1 className = "datasheet">Unity</h1>
+
+              )}
+                 {isReactNative &&(
+                   
+                   <h1 className = "datasheet">React</h1>
+ 
+               )}
+        
         
           
           <div className = "buttonProjects">
             <ul className = "ultechnologyButtons">
               <li>
+               
                 <img className = "pictures"src = {unity} onClick = {handleClickUnityProjects}/>
-                <span className = "subtitle"><p>Unity Engine</p></span>
+                
               </li>
               <li>
                 <img className = "pictures"src = {reactnative} onClick = {handleClickReactNativeProjects}/>
-                <span className = "subtitle"><p><br/>React Native</p></span>
+               
               </li>
           
             </ul>

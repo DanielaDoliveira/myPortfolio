@@ -5,7 +5,7 @@
   padding-bottom: 150px;
 }
   
-#unityList
+.unityList
 {
   display:flex;
   align-items:center;
@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 600px){
-  #unityList
+  .unityList
   {
     display:block;
     align-items:center;
@@ -51,12 +51,24 @@ p
   
 }
 @media (max-width: 1024px){
-  #unityList
+  .unityList
   {
     display:block;
     align-items:center;
     justify-content:center;
    
   }
+  #projectimg
+{
+  display:block;
+  margin:20px auto;  
+}
+p
+{
+  text-align:center;
+}
+
+  
+
  
 }

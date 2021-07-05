@@ -1,83 +1,87 @@
-import project from "../assets/.env.photos/project.png"
-import bee from "../assets/.env.photos/bee.png"
-import gamejam from "../assets/.env.photos/gamejam.png"
-import ninja from "../assets/.env.photos/ninja.png"
-import ninjat from "../assets/.env.photos/ninjat.png"
-import camouflageSystem from "../assets/.env.photos/camouflageSystem.png"
-import platformtd from "../assets/.env.photos/platform.png"
+
+
+
 import "../styles/uProjects.scss"
-
-
+import {useState} from "react"
+import { UnityPC } from "./UnityPC";
+import { UnityMobile } from "./UnityMobile";
+import ninja from "../assets/.env.photos/ninja.png"
 export function UnityProjectsContent ()
 {
 
- 
-  
+ const [isPC,setIsPc] = useState(false);
+ const [isMobile,setIsMobile] = useState(false);
+ const [isAll,setIsAll] = useState(true);
+  function handleClickIsPC(){
+        setIsAll(false);
+        setIsMobile(false);
+        setIsPc(true);
+  }
+  function handleClickIsMobile(){
+    setIsAll(false);
+    setIsPc(false);
+    setIsMobile(true);
+  }
+  function handleClickAllProjects(){
+    setIsPc(false);
+    setIsMobile(false);
+    setIsAll(true);
+  }
   return (
     <div className = "DivUnityProjects">
-        <h1 className= "datasheet">Unity Projects:</h1>
-      
-            <ul id = "unityList">
-
-            <li>
-            <a href = "https://mega.nz/folder/CKBiBITQ#DAH4tJXpF0psWfon9i8qlA">
-            <img src = {ninja} id = "projectimg"/>
-              </a>
-           <p>Ninja Challenge <br/> Windows,Mac and Linux</p> 
-            </li>
-
-            <li>
-            <a href = "https://play.google.com/store/apps/details?id=com.DanielaFialho.ProjetoBeeVersao">
-              
-            <img src = {bee} id = "projectimg"/>
-              </a>
-            <p>Bee <br/> Android</p> 
-            </li>
-
-            <li>
-                <a href = "https://mega.nz/folder/HXpy2IzZ#Tf_JM5c_5Gdpxz7IHXOiNg">
-                    <img src = {ninjat} id = "projectimg"/>
-                </a>
-                  <p>Ninja:Training to Win<br/> Windows,Mac and Linux</p> 
-            </li>
-
-            <li>
-            <a href = "https://globalgamejam.org/2021/games/are-you-sure-1">
-            <img src = {gamejam} id = "projectimg"/>
-            </a>
-         
-            <p>Are you sure? <br/> Windows,Mac and Linux</p> 
-            </li>
-
-            <li>
-           <a href = "https://github.com/Danethree/ProjetoUnity3D">
-           <img src = {project} id = "projectimg"/>
-            <p> Unity 3D Prototype <br/> Windows,Mac and Linux</p> 
-             </a> 
-            </li>
-      
-            <li>
-           <a href = "https://github.com/Danethree/CamouflageSystemAI">
-           <img src = {camouflageSystem} id = "projectimg"/>
-           
-             </a> 
-             <p>Camouflage System with Genetic Algorithms <br/> Windows,Mac and Linux</p> 
-            </li>
-
-
+     
+     < div className = "reactBar">
+                <div className = "navReact">
+                    <ul className = "ultechnologyButtons">
+                        <li className = "submenu"
+                                onClick = {handleClickAllProjects}
+                            >&nbsp;All &nbsp;
+                        </li>
+                        &nbsp;| &nbsp;
+                        <li className = "submenu"
+                            onClick = {handleClickIsPC}
+                        >&nbsp;Desktop</li>
+                        &nbsp;| &nbsp;
+                          
+                            <li className = "submenu"
+                             onClick = {handleClickIsMobile}>
+                                &nbsp;Android
+                                </li>
+                     </ul>
+               </div>
+            </div> 
+      {isAll&&(
+           <div>
+              <ul className = "unityList"> <li><UnityPC/>
+            <UnityMobile/> </li>
             </ul>
-            <ul id = "unityList">
-              
-            <li>
-           <a href ="https://github.com/Danethree/platform2D">
-           <img src = {platformtd} id = "projectimg"/>
-           <p>Platform 2D Prototype <br/> Windows,Mac and Linux</p> 
-             </a> 
-            
-            </li>
+          </div>
+        
 
-
+      )}
+      
+      {isMobile&&(
+           <div>
+              <ul className = "unityList"> 
+              <li><UnityMobile/> </li>
+               <li>
+                <a href = "https://mega.nz/folder/CKBiBITQ#DAH4tJXpF0psWfon9i8qlA"><img src = {ninja} id = "projectimg"/></a>
+              </li>
             </ul>
+          </div>
+        
+
+      )}
+        {isPC&&(
+           <div>
+              <ul className = "unityList"> <li>
+            <UnityPC/> </li>
+            </ul>
+          </div>
+        
+
+      )}
+               
 
                   
          
