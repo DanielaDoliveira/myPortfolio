@@ -48,12 +48,12 @@ export function Projects()
                )}
           {isUnity &&(
                    
-                  <h1 className = "datasheet">Unity</h1>
+                  <h1 className = "datasheet">-&nbsp;Unity&nbsp;-</h1>
 
               )}
                  {isReactNative &&(
                    
-                   <h1 className = "datasheet">React</h1>
+                   <h1 className = "datasheet">-&nbsp;React&nbsp;-</h1>
  
                )}
         
