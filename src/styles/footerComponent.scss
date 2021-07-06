@@ -33,7 +33,7 @@ footer{
   text-align:justify;
   padding:20px;
 }
-.paragraph h6
+.paragraph h5
 {
 
   
@@ -41,6 +41,7 @@ footer{
   font-family:"Poppins";
   font-size : 12px;
   margin: 10px;
+  
   
 }
 
@@ -50,6 +51,7 @@ footer{
   display:flex;
   justify-content:center;
   align-items: center;
+  padding-top: 100px;
  
   
 }
@@ -82,7 +84,18 @@ footer{
 
  
 }
-
+#informations 
+{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+#informations h5
+{
+  display:inline-flex;
+  justify-content:center;
+  align-items: center;
+}
 .badgesInFooter
 {
  display:inline;

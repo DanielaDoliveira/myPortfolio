@@ -14,64 +14,71 @@ import github from "../assets/.env.photos/github.svg"
 import linkedin from "../assets/.env.photos/linkedin.svg"
 export function About(){
   return(
-    <div className = "aboutMe">
+    <div>
+         <div className = "aboutMe">
               
-    <div className = "careerOne">
-            <p>Unity Developer &amp;<br/>
-            
-        </p> 
-            <p className = "careerTwo">Mobile Developer</p> 
-            
+              <div className = "careerOne">
+                      <h1>Unity Developer &amp;<br/>
+                      
+                  </h1> 
+                      <h1 className = "careerTwo">Mobile Developer</h1> 
+                      
+              </div>
+          
+             
+              <section className = "descriptionAboutMe">
+                    <div id = "myPhotoDiv">
+                    <img src = {profilePhoto} id = "myPhoto" className = "myPhoto" alt = "Foto de perfil de Daniela"/>
+                    <p id = "description">My name is Daniela and I'm a software developer searching continuous improvement.
+                    I am programming games personal projects  in C# with Unity 2 years and I am starting to develop applications with the library React to improve my software's delevolment skills.
+          My great objective is to learn each more forms of software development to improve myself and discover more solutions of problems that
+           will be appear.I love to programm games and I love the interactions forms that the player can have playing in your smartphone,
+            that is why I am study very hard the mobile development, waiting that I can discover always  new possibilities with the technology
+             world. I am science computer bachelor's degree and I am studying Software Engineering graduate studies currently. </p>
+                    </div>
+                   
+                   </section>
+          
+                 </div>
+
+                 <section className = "mySkills">
+                    
+                 
+                    <h2 className = "datasheet">-&nbsp;Skills&nbsp;-</h2>
+                    <h2 className = "datasheet">-&nbsp;Programming Languages&nbsp;-</h2>
+                      <div className = "listOfBadges">
+                      <ul className = "badges">
+                       <li><img id = "badges"src = {csharplogo} alt = "C# programming language "/></li>  
+                        <li><img id = "badges"src = {htmlfiveLogo} alt = "Hypertext Markup Language version 5"/></li> 
+                        <li><img id = "badges"src = {cssthreeLogo} alt = "Stylesheet CSS3"/> </li> 
+                        <li><img id = "badges"src = {javascriptLogo} alt = "Javascript programming language"/> </li> 
+                        <li><img id = "badges"src = {kotlinLogo} alt = "Kotlin programming language "/> </li> 
+                      </ul>
+                      </div>
+             
+                       <h2 className = "datasheet">-&nbsp;Libraries&nbsp;-</h2>
+                       <div className = "listOfBadges">
+                       <ul className = "badges">
+                         <li>  <img id = "badges"src = {reactJsLogo} alt = " React logo"/></li>
+                         <li> <img id = "badges"src = {reactNativeLogo} alt = " React Native logo"/> </li>
+                         </ul>
+                       
+                       
+                        
+                      </div>
+             
+                      <h2 className = "datasheet">-&nbsp;Engines&nbsp;-</h2>
+                      <div className = "listOfBadges">
+                            <img id = "badges"src = {unityLogo} alt = "Unity logo"/>
+                      </div>
+             
+                      
+                      
+               
+             
+             
+                    </section>
     </div>
-
    
-    <section className = "descriptionAboutMe">
-          <div id = "myPhotoDiv">
-          <img src = {profilePhoto} id = "myPhoto" className = "myPhoto" alt = "Foto de perfil de Daniela"/>
-          </div>
-         
-         
-
-          <h1 className = "datasheet" id = "aboutMe"> About Me</h1>
-          <span className = "lineTitle"></span>
-          <h2 className = "datasheet">Degree:</h2>
-          <p id = "description">Science Computer</p>
-          <h2 className = "datasheet">Programming Languages:</h2>
-         <div className = "listOfBadges">
-         <ul className = "badges">
-          <li><img id = "badges"src = {csharplogo} alt = "C# programming language "/></li>  
-           <li><img id = "badges"src = {htmlfiveLogo} alt = "Hypertext Markup Language version 5"/></li> 
-           <li><img id = "badges"src = {cssthreeLogo} alt = "Stylesheet CSS3"/> </li> 
-           <li><img id = "badges"src = {javascriptLogo} alt = "Javascript programming language"/> </li> 
-           <li><img id = "badges"src = {kotlinLogo} alt = "Kotlin programming language "/> </li> 
-         </ul>
-         </div>
-
-          <h2 className = "datasheet">Libraries:</h2>
-          <div className = "listOfBadges">
-          <ul className = "badges">
-            <li>  <img id = "badges"src = {reactJsLogo} alt = " React logo"/></li>
-            <li> <img id = "badges"src = {reactNativeLogo} alt = " React Native logo"/> </li>
-            </ul>
-          
-          
-           
-         </div>
-
-         <h2 className = "datasheet">Engines:</h2>
-         <div className = "listOfBadges">
-               <img id = "badges"src = {unityLogo} alt = "Unity logo"/>
-         </div>
-
-         <h2 className = "datasheet">Languages:</h2>
-         <p  id = "description"><b>English: </b> Intermediate</p>
-         <p  id = "description"><b>Spanish: </b> Basic</p>
-        
-        
-     
-         
-    </section>
-
-</div>
   )
 }

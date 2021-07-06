@@ -54,7 +54,15 @@ export function MenuBar() {
                         
                         
                          </li>
-                   
+                         <li>  
+                    
+                    <a href = "https://docs.google.com/document/d/1CIBF4l8YSoI7rHWw233GT-OGk_QV1v-U8XZE3cmuPXo/edit?usp=sharing"> 
+                 Resume
+                      </a>
+                    
+                    
+                     </li>
+               
                 </ul>
   
      </nav>

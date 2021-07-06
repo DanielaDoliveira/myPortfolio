@@ -1,4 +1,4 @@
-p
+h1
 {
   font-family: 'Poppins';
   font-size:30px;
@@ -10,7 +10,7 @@ p
 .secCareer{
   margin-left :200px;
 }
-.careerOne p
+.careerOne h1
 {
   font-size: 30px;
   text-shadow: 1px 1px 2px #000000;
@@ -26,6 +26,17 @@ p
  
 
 }
+#description{
+  display:flex;
+ 
+    text-align: left ;
+    text-shadow: 2px 2px 4px 2px black;
+    margin:5px;
+    padding:15px;
+    font-family: "Roboto";
+    font-size: 25px;
+
+}
 .careerTwo
 { font-size:25px;
   margin-left:100px;
@@ -37,30 +48,32 @@ p
 {
   background:rgb(116, 12, 84);
   padding-bottom:10px;
+  
 }
-.myPhoto
-{
- 
-  display:block;
-  align-items: center;
-  justify-content:center;
-  height:150px;
-  width: 100px;
-  box-shadow: #222121;
-  border-radius: 190px;
-  margin:10px;
-  box-shadow: 7px 5px 4px black;
- 
- 
-}
+
 #myPhotoDiv
 {
   display:flex;
  
-  align-items: center;
-  justify-content:center;
+  align-items: flex-start;
+  justify-content:flex-start;
+  background:rgb(245, 118, 207);
+  box-shadow: 2px 4px 9px 1px black;
+  
 }
-
+.mySkills
+{
+  background:rgb(55, 2, 39);
+  margin:10px auto;
+  padding-bottom:30px;
+  h2{
+    font-family: "Poppins";
+  }
+  .mySkills p{
+    font-family: Roboto;
+    text-align: center;
+  }
+}
 
 .descriptionAboutMe 
 {
@@ -144,10 +157,106 @@ p
  
 }
 
-
-@media (max-width: 858px)
+@media(max-width: 600px)
 {
+  .descriptionAboutMe 
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
  
+}
+
+
+#description{
+  display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center ;
+    font-size:16px;
+
+}
+
+.descriptionAboutMe img
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width:200px;
+   margin:10px auto;
+ 
+}
+
+#myPhoto img
+{
+  display:flex;
+  box-shadow: 3px 5px 6px 6 black;
+  align-items: center;
+  justify-content:center;
+  
+  width:50px;
+
+  
+}
+#myPhotoDiv
+{
+  display:block;
+ 
+  align-items: center;
+  justify-content:center;
+  background:rgb(245, 118, 207);
+  box-shadow: 2px 4px 9px 1px black;
+
+
+  
+}
+
+}
+@media (max-width: 800px)
+{
+  .descriptionAboutMe img
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width:200px;
+   margin:10px auto;
+ 
+}
+
+
+#description{
+  display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center ;
+    font-size:16px;
+
+}
+
+#myPhoto img
+{
+  display:flex;
+  box-shadow: 3px 5px 6px 6 black;
+  align-items: center;
+  justify-content:center;
+
+  width:50px;
+
+  
+}
+#myPhotoDiv
+{
+  display:block;
+  margin: 10px auto;
+  align-items: center;
+  justify-content:center;
+  background:rgb(245, 118, 207);
+  box-shadow: 2px 4px 9px 1px black;
+
+
+  
+}
   .badgeUnity {
     display:flex;
  
@@ -202,7 +311,7 @@ p
 .careerOne
 { 
   margin:0px;
-  
+  padding-top:150px;
   padding-right: 13%;
   background:#222121;
   justify-content:center;

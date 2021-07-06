@@ -38,7 +38,7 @@ export function Projects()
                      {( !isReactNative &&
                     <div>
                       <h1 className = "datasheet">Projects</h1>
-                    <p  id = "description"> Which project type do you want to visualize?
+                    <p  id = "projectsDescription"> Which project type do you want to visualize?
                     <br/><b>CHOOSE</b> pressing one options bellow:</p>
                       </div>
                     )}

@@ -11,13 +11,13 @@ const copyright = `(2021) Created by Daniela Fialho.${'\n'}All Rights Reserved${
   return(
     <footer className = "myFooterArea" >
       <div className = "paragraph">   
-            <h6>
+            <h5>
             <strong>{copyright}</strong>
-            </h6> 
+            </h5> 
          
        </div>
       <div>
-     
+      <h5 id = "informations">CONTACT/FOLLOW ME!</h5>
       <ul className ="contactBadges" id = "contacts">
    
       <li>
