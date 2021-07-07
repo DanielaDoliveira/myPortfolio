@@ -15,7 +15,10 @@ nav {
 	background: #1c1c1d;
 	height: 80px;
 	width: 100%;
-
+	position: fixed;
+	
+	top: 0;
+	z-index: 99;
 	
 }
 
@@ -91,6 +94,9 @@ a.active, a:hover {
 	nav {
 	
 		position: fixed;
+	
+    top: 0;
+    z-index: 99;
 	
 	}
   label.logo{
