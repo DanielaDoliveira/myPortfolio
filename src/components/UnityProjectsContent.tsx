@@ -1,32 +1,38 @@
 
 
 
-import "../styles/uProjects.scss"
+
 import {useState} from "react"
 import { UnityPC } from "./UnityPC";
 import { UnityMobile } from "./UnityMobile";
 import ninja from "../assets/.env.photos/ninja.png"
+
 export function UnityProjectsContent ()
 {
 
  const [isPC,setIsPc] = useState(false);
  const [isMobile,setIsMobile] = useState(false);
+
  const [isAll,setIsAll] = useState(true);
   function handleClickIsPC(){
         setIsAll(false);
         setIsMobile(false);
         setIsPc(true);
+      
   }
   function handleClickIsMobile(){
     setIsAll(false);
     setIsPc(false);
     setIsMobile(true);
+   
   }
   function handleClickAllProjects(){
     setIsPc(false);
     setIsMobile(false);
     setIsAll(true);
+  
   }
+
   return (
     <div className = "DivUnityProjects">
      
@@ -40,20 +46,24 @@ export function UnityProjectsContent ()
                         &nbsp;| &nbsp;
                         <li className = "submenu"
                             onClick = {handleClickIsPC}
-                        >&nbsp;Desktop</li>
+                        >&nbsp;Computer</li>
                         &nbsp;| &nbsp;
                           
                             <li className = "submenu"
                              onClick = {handleClickIsMobile}>
                                 &nbsp;Android
                                 </li>
+                           
                      </ul>
                </div>
             </div> 
       {isAll&&(
            <div>
-              <ul className = "unityList"> <li><UnityPC/>
-            <UnityMobile/> </li>
+              <ul className = "unityList"> 
+              <li><UnityPC/>
+              <UnityMobile/>
+         
+            </li> 
             </ul>
           </div>
         
@@ -61,15 +71,16 @@ export function UnityProjectsContent ()
       )}
       
       {isMobile&&(
-           <div>
-              <ul className = "unityList"> 
-              <li><UnityMobile/> </li>
-               <li>
-                <a href = "https://mega.nz/folder/CKBiBITQ#DAH4tJXpF0psWfon9i8qlA"><img src = {ninja} id = "projectimg"/></a>
-              </li>
-            </ul>
-          </div>
-        
+  
+            <div>
+                         <UnityMobile/>
+
+   
+              </div>
+      
+
+              
+    
 
       )}
         {isPC&&(
@@ -81,7 +92,10 @@ export function UnityProjectsContent ()
         
 
       )}
-               
+       
+        
+
+        
 
                   
          
