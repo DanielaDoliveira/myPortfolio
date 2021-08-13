@@ -78,6 +78,7 @@ export function Rprojects()
              )}
                 {isAll &&(
                <div>
+                     <p className = "image-information"> TOUCH or CLICK one of images to SEE MORE DETAILS:</p>
                  <ul  id = "reactList">
                    <li> <ReactNativeProjects/> </li>
                    <li> <ReactProjects/></li>

@@ -59,6 +59,7 @@ export function UnityProjectsContent ()
             </div> 
       {isAll&&(
            <div>
+             <p className = "image-information"> TOUCH or CLICK one of images to SEE MORE DETAILS:</p>
               <ul className = "unityList"> 
               <li><UnityPC/>
               <UnityMobile/>
