@@ -12,8 +12,8 @@
 .gallery-container
 {
   display:grid;
-  grid-template-columns: repeat(6,1fr);
-
+  grid-template-columns: repeat(5,1fr);
+ 
 }
 .item-gallery #img-gallery
 {
@@ -25,7 +25,7 @@
 {
   box-shadow: none;
   border-style: solid;
-  border-color:#1d1c1c;
+  border-color:#363636;
 border-radius:0%;
 }
 .item-gallery .img-galleryMobile
@@ -48,7 +48,7 @@ border-radius:0%;
 .item-gallery .titleGallery
 {
   position: absolute;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #363636;
   left:0;
   bottom:0;
   width:100%;
@@ -58,7 +58,7 @@ border-radius:0%;
 .item-gallery .titleGalleryMobile
 {
   position: absolute;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #363636;
   left:0;
   bottom:0;
   width:150px;
@@ -75,7 +75,7 @@ border-radius:0%;
   .item-gallery .titleGallery
   {
     position: absolute;
-    background-color: rgba(0,0,0,0.8);
+    background-color: #363636;
     left:0;
     top:0;
     height:5%;

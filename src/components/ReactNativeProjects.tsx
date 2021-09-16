@@ -4,13 +4,13 @@ export function ReactNativeProjects()
 {
   return(
   <div>
-    <div className = "reactProjects">
-            <ul id = "reactList">
-            <li>  <a href = "https://github.com/Danethree/plantManager">
-            <img src = {plantmanager} id = "projectimgPlant"/>
-          </a> </li>
+    <div className = "gallery-container">
+    <div className="item-gallery">    
+            <a href = "https://github.com/Danethree/plantManager">
+            <img src = {plantmanager} id = "img-gallery"/>
+          </a> 
 
-            </ul>
+    </div>        
     </div>
         
   </div>

@@ -6,12 +6,13 @@ import camouflageSystem from "../assets/.env.photos/camouflageSystem.png"
 import workshop from "../assets/.env.photos/workshop.png"
 import project from "../assets/.env.photos/project.png"
 import gameplay from "../assets/.env.photos/gameplay.jpg"
-
+import bee from "../assets/.env.photos/banner.png"
+import gyromaze from "../assets/.env.photos/gyr.png"
 import "../styles/newUnityCss.scss"
-export function UnityPC()
+export function UnityEngine()
 {
   return(
-   <div>
+   <div> 
      
       <div className = "gallery-container">
     
@@ -63,32 +64,24 @@ export function UnityPC()
         
     <a href = "https://danethree.itch.io/infinite-driving-3d">
        <img src = {gameplay} id = "img-gallery"/>
-      
-      
-    
-     </a> 
-      
-
+       
+     </a>   
     </div>
-  
-    
-      
-        
- 
-    
-     
-
-
+    <div className = "item-gallery">
+      <a href = "https://play.google.com/store/apps/details?id=com.DanielaFialho.ProjetoBeeVersao">
+        <img src = {bee} id = "img-gallery"/></a>
+    </div>    
 
     
-
-
-  
-     
-     
-
- 
+    <div className = "item-gallery">
+      <a href = "https://play.google.com/store/apps/details?id=com.DanielaFialho.ProjetoBeeVersao">
+        <img src = {gyromaze} id = "img-gallery"/>
+      </a>
+     </div>
 </div>
+
+
+    
    </div>
   )
 }
