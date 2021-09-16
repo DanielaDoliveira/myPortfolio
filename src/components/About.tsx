@@ -1,4 +1,4 @@
-import profilePhoto from '../assets/.env.photos/daniela.png'
+import profilePhoto from '../assets/.env.photos/daniela.jpg'
 
 
 import '../styles/about.scss'
@@ -12,12 +12,12 @@ export function About(){
               <section className = "descriptionAboutMe">
                     <div id = "myPhotoDiv">
                     <img src = {profilePhoto} id = "myPhoto" className = "myPhoto" alt = "Foto de perfil de Daniela"/>
-                    <p id = "description">My name is Daniela and I'm a game developer searching continuous improvement.
-                    I am programming games personal projects  in C# with Unity 2 years and I am starting to develop applications with the library React to improve my software's delevolment skills.
-          My great objective is to learn each more forms of software development to improve myself and discover more solutions of problems that
-           will be appear.I love to programm games and I love the interactions forms that the player can have playing in your smartphone,
-            that is why I am study very hard the mobile development, waiting that I can discover always  new possibilities with the technology
-             world. I am science computer bachelor's degree and I am studying Software Engineering graduate studies currently. </p>
+                    <p id = "description">My name is Daniela and I am passion to learn. Programming is a great passion 
+                    and games is a perfect software that allows me to challenge myself to improve in my learn. 
+                  <br/>  <br/>  When I am not programming I love to play games and drawing and when I have opportunity, to visit 
+                    new places. I love to learn new things and venture out in different places.<br/>  <br/> I usually meditate about
+                     each experience that I live, and I usually think about how the experiences are create and how the
+                      people create memories with that ones that they love.  </p>
                     </div>
                    
                    </section>

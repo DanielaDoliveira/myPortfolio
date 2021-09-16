@@ -16,10 +16,7 @@ export function Homepage()
            <MenuBar/>
            <MyDescription/>
            <About/>
-
-         
            <Projects/>
-           <MySkills/>
            <MyFooter/>
       
         </div>

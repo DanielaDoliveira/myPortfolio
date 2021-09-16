@@ -8,6 +8,10 @@ h1
   text-align:center;
   
 }
+.myPhoto
+{
+  width:200px;
+}
 
 .secCareer{
   margin-left :200px;
@@ -29,18 +33,16 @@ h1
   padding-bottom:50px;
   padding-top:150px;
  
-
 }
 #description{
   display:flex;
- 
-    text-align: center ;
-    text-shadow: 2px 2px 4px 2px black;
-    margin:5px;
-    padding:15px;
-    font-family: "Glory","Roboto",sans-serif;
-    font-size: 25px;
-    color:#FFFFE0;
+  text-align: center ;
+  text-shadow: 2px 2px 4px 2px black;
+  margin:5px;
+  padding:15px;
+  font-family: "Glory","Roboto",sans-serif;
+font-size: 25px;
+  color:#FFFFE0;
     
 
 }
@@ -61,7 +63,7 @@ h1
 #myPhotoDiv
 {
   display:flex;
- 
+  
   align-items: flex-start;
   justify-content:flex-start;
   background:#1d1c1c;
@@ -85,8 +87,8 @@ h1
 .descriptionAboutMe 
 {
     background:#363636;
-    padding:20px;
-    margin:50px;
+    padding:10px;
+    margin:40px;
     box-shadow: 20px 5px 4px black;
  
  
