@@ -10,7 +10,7 @@ export function MenuBar() {
     return(
      <nav>
        
-       <label className = "logo"> Daniela Fialho</label>
+       <label className = "logo"> Daniela D'Oliveira</label>
        <div className="menu-icon" onClick={handleClick}>
       
           <i className={click?"fas fa-bars":"fas fa-times"} id = "threebars"/>

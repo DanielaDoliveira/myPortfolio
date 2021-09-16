@@ -4,7 +4,7 @@ h1
 {
   font-family: 'Poppins';
   font-size:30px;
-  color:#ffffff;
+  color:#FFFACD;
   text-align:center;
   
 }
@@ -16,6 +16,7 @@ h1
 {
   font-size: 30px;
   text-shadow: 1px 1px 2px #000000;
+  
   
 }
 .careerOne
@@ -33,12 +34,14 @@ h1
 #description{
   display:flex;
  
-    text-align: left ;
+    text-align: center ;
     text-shadow: 2px 2px 4px 2px black;
     margin:5px;
     padding:15px;
-    font-family: "Roboto";
+    font-family: "Glory","Roboto",sans-serif;
     font-size: 25px;
+    color:#FFFFE0;
+    
 
 }
 .careerTwo
@@ -50,7 +53,7 @@ h1
 }
 .aboutMe
 {
-  background:rgb(116, 12, 84);
+  background:#1C1C1C;
   padding-bottom:10px;
   
 }
@@ -61,13 +64,13 @@ h1
  
   align-items: flex-start;
   justify-content:flex-start;
-  background:rgb(245, 118, 207);
+  background:#1d1c1c;
   box-shadow: 2px 4px 9px 1px black;
   
 }
 .mySkills
 {
-  background:rgb(55, 2, 39);
+  background:#1C1C1C;
   margin:10px auto;
   padding-bottom:30px;
   h2{
@@ -81,7 +84,7 @@ h1
 
 .descriptionAboutMe 
 {
-    background:rgb(209, 72, 168);
+    background:#363636;
     padding:20px;
     margin:50px;
     box-shadow: 20px 5px 4px black;
@@ -96,7 +99,7 @@ h1
   font-family: "Poppins";
   align-items: center;
   text-align: center;
-
+  color:#C0C0C0;
  
  
 }
@@ -137,7 +140,7 @@ h1
 
 .lineTitle {
   content: "";
-  background-color: rgb(199, 6, 151);
+  background-color: #1d1c1c;
   
   width:100%;
   
@@ -145,7 +148,7 @@ h1
   
   box-shadow: 3px 5px 6px black;
   border-style: groove;
-  border-color: rgb(165, 6, 125);
+  border-color: #1d1c1c;
 }
 .listOfBadges
 {
@@ -208,7 +211,7 @@ h1
  
   align-items: center;
   justify-content:center;
-  background:rgb(245, 118, 207);
+  background: #1d1c1c;
   box-shadow: 2px 4px 9px 1px black;
 
 
@@ -255,7 +258,7 @@ h1
   margin: 10px auto;
   align-items: center;
   justify-content:center;
-  background:rgb(245, 118, 207);
+  background:#1d1c1c;
   box-shadow: 2px 4px 9px 1px black;
 
 
@@ -346,7 +349,7 @@ h1
 }
 .descriptionAboutMe 
 {
-    background:rgb(209, 72, 168);
+    background:#1d1c1c;
     padding:20px;
     margin:10px;
     box-shadow: 20px 5px 4px black;

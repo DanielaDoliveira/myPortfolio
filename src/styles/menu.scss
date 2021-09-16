@@ -7,7 +7,7 @@
 }
 body{
 background: #383737;
-color:#e4e2cb;
+color:#FFFFE0;
 font-size: 16px;
 font-family:"Poppins"
 }
@@ -23,7 +23,7 @@ nav {
 }
 
 label.logo {
-	color: white;
+	color: #FFFFE0;
 	font-size: 35px;
   line-height:80px;
 	padding: 0 100px;
@@ -42,7 +42,7 @@ nav ul li {
 	
 }
 nav ul li a {
-	color: white;
+	color: #FFFFE0;
 	font-size: 17px;
 	padding: 7px 13px;
 	border-radius: 3px;
@@ -56,7 +56,7 @@ nav ul li a {
 }
 a.active, a:hover {
 	background: #101011;
-  color:rgb(116, 12, 84);
+ 
 	transition: .5s;
 	
 	font-size: 20px;
@@ -69,7 +69,7 @@ a.active, a:hover {
 .logo
 {
   margin-left: 20px;
-  color: #e4e2cb;
+  color:#FFFACD;
   display: flex;
  padding-top: 20px;
 

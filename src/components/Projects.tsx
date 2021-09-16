@@ -9,6 +9,7 @@ import '../styles/projects.scss';
 import { UnityProjectsContent } from './UnityProjectsContent'
 import { Rprojects } from './RProjects'
 import { useState } from 'react'
+import godot from "../assets/.env.photos/godot.png"
 
 
 export function Projects()
@@ -20,6 +21,7 @@ export function Projects()
   function handleClickUnityProjects()
   {
     setIsReactNative(false);
+   
     setIsUnity(true)
 
      
@@ -28,6 +30,14 @@ export function Projects()
   function handleClickReactNativeProjects()
   {
     setIsReactNative(true);
+    
+    setIsUnity(false);
+   
+  }
+  function handleClickGodot()
+  {
+ 
+    setIsReactNative(false);
     setIsUnity(false);
    
   }
@@ -36,11 +46,11 @@ export function Projects()
             {!isUnity &&(
                <div>
                      {( !isReactNative &&
-                    <div>
-                      <h1 className = "datasheet">-&nbsp;Projects&nbsp;-</h1>
-                    <p  id = "projectsDescription"> Which project type do you want to visualize?
-                    <br/><b>CHOOSE</b> pressing one options bellow:</p>
-                      </div>
+                        <div>
+                               <h1 className = "datasheet">-&nbsp;Projects&nbsp;-</h1>
+                             <p  id = "projectsDescription"> Which project type do you want to visualize?
+                             <br/><b>CHOOSE</b> pressing one options bellow:</p>
+                          </div>
                     )}
                 
  
@@ -56,7 +66,7 @@ export function Projects()
                    <h1 className = "datasheet">-&nbsp;React&nbsp;-</h1>
  
                )}
-        
+             
         
           
           <div className = "buttonProjects">
@@ -70,6 +80,7 @@ export function Projects()
                 <img className = "pictures"src = {reactnative} onClick = {handleClickReactNativeProjects}/>
                
               </li>
+            
           
             </ul>
             <div id = "myPortfolioProject">
@@ -83,7 +94,7 @@ export function Projects()
                     <Rprojects/>
 
                  )}
-               
+                
                 
                 
           </div>

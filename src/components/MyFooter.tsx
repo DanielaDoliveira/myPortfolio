@@ -7,7 +7,7 @@ import linkedinmark from "../assets/.env.photos/linkedinmark.png"
 import telegrammark from "../assets/.env.photos/telegrammark.png"
 export function MyFooter()
 {
-const copyright = `(2021) Created by Daniela Fialho.${'\n'}All Rights Reserved${'\n'}`;
+const copyright = `(2021) Created by Daniela F.D'Oliveira.${'\n'}All Rights Reserved${'\n'}`;
   return(
     <footer className = "myFooterArea" >
       <div className = "paragraph">   

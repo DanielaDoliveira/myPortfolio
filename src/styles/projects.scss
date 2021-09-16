@@ -8,7 +8,7 @@
     margin:30px auto;
     font-size: 20px;
     text-align:center;
-    font-family: "Roboto";
+    font-family: "Glory","Roboto",sans-serif;
 
 }
 #myPortfolioProject
@@ -55,20 +55,21 @@
 }
 .myProjects p
 {
-  font-family:'Poppins';
+  font-family: "Glory","Roboto",sans-serif;
   margin:10px;
  
 }
 .subtitle p
 {
   font-size:15px;
-  text-shadow: 1px 1px 1px rgb(165, 6, 125);
+  
+ 
 }
 .buttonProjects img:hover
 {
   box-shadow: 3px 5px 6px black;
 border-style: solid;
-border-color: rgb(165, 6, 125);
+
 border-radius:10%;
 }
 
