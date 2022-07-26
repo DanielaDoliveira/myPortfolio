@@ -1,4 +1,6 @@
-# Portfolio(Antigo)| Software Developer
+# Portfolio| Software Developer
+
+Este é o primeiro portfólio que construí feito no React JS.
 
 ## Tecnologias utilizadas para desenvolver o portfólio:
 
